@@ -30,6 +30,26 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden; }
 
+#goTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #2195f1;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#goTop:hover {
+    background-color: #badcf9;
+    color: black;
+}
 a {
     color: #666; }
 a:hover {
