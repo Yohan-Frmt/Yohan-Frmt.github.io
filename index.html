@@ -109,7 +109,7 @@
           </div>
         </div>
         <div class="col m6">
-          <img alt="qrcode" class="photo" src="/img/dl.png"/>
+          <img alt="qrcode" class="photo" src="/img/vcard.png"/>
         </div>
       </div>
     </div>
@@ -267,50 +267,46 @@
     <section>
       <div class="container">
         <div class="row form-area animate__animated animate__fadeIn">
-          <div class="col m7 s12">
-              <img alt="vcard qrcode" class="vcard" src="/img/vcard.png"/>
-<!--            <h3 data-t="contact.section.title">Formulaire de contact</h3>-->
-<!--            <form id="form" class="contact-form">-->
-<!--              <div class="row">-->
-<!--                <div class="col m5 input-field">-->
-<!--                  <label for="Name" data-t="contact.form.name">Nom</label>-->
-<!--                  <input id="Name" type="text" class="form-input" name="Name" data-error="Ce champ est obligatoire"-->
-<!--                         required>-->
-<!--                  <div class="error-content"></div>-->
-<!--                </div>-->
-<!--                <div class="col m5 input-field">-->
-<!--                  <label for="Email">Email</label>-->
-<!--                  <input id="Email" type="email" class="form-input validate" name="Email"-->
-<!--                         pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"-->
-<!--                         required>-->
-<!--                  <span class="helper-text" data-error="Email non valide"></span>-->
-<!--                </div>-->
-<!--                <div class="col m10 input-field">-->
-<!--                  <label for="Subject" data-t="contact.form.subject">Objet</label>-->
-<!--                  <input id="Subject" type="text" class="form-input has-character-counter" data-length="30"-->
-<!--                         name="Subject" data-error="Ce champ est obligatoire" required>-->
-<!--                  <div class="error-content"></div>-->
-<!--                </div>-->
-<!--                <div class="col m10 input-field">-->
-<!--                  <label for="Message">Message</label>-->
-<!--                  <textarea class="materialize-textarea form-input has-character-counter"-->
-<!--                            data-length="200" id="message" name="Message" rows="5" data-error="Message"-->
-<!--                            oninput="st()" required></textarea>-->
-<!--                  <div class="error-content"></div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="row sending">-->
-<!--                <button class="button">-->
-<!--                  <span class="submit" data-t="contact.form.submit">Envoyer</span>-->
-<!--                  <span class="loading"><i class="fas fa-sync"></i></span>-->
-<!--                  <span class="check"><i class="fa fa-check"></i></span>-->
-<!--                </button>-->
-<!--              </div>-->
-<!--            </form>-->
+          <div id="thxarea" class="col m7 s12" style="display: none">
+            Coucou
           </div>
-          <div class="thanks">
-            <i class="fas fa-crown"></i>
-            <p class="tyMessage" data-t="contact.form.tyMessage">Merci pour votre message !</p>
+          <div id="form-area" class="col m7 s12">
+            <h3 data-t="contact.section.title">Formulaire de contact</h3>
+            <form id="form" class="contact-form">
+              <div class="row">
+                <div class="col m5 input-field">
+                  <label for="name" data-t="contact.form.name">Nom</label>
+                  <input id="name" type="text" class="form-input" name="name" data-error="Ce champ est obligatoire"
+                         required>
+                  <div class="error-content"></div>
+                </div>
+                <div class="col m5 input-field">
+                  <label for="email">Email</label>
+                  <input id="email" type="email" class="form-input validate" name="email"
+                         pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"
+                         required>
+                  <span class="helper-text" data-error="Email non valide"></span>
+                </div>
+                <div class="col m10 input-field">
+                  <label for="subject" data-t="contact.form.subject">Objet</label>
+                  <input id="subject" type="text" class="form-input has-character-counter" data-length="30"
+                         name="subject" data-error="Ce champ est obligatoire" required>
+                  <div class="error-content"></div>
+                </div>
+                <div class="col m10 input-field">
+                  <label for="message">Message</label>
+                  <textarea class="materialize-textarea form-input has-character-counter"
+                            data-length="200" id="message" name="message" rows="5" data-error="Message"
+                            oninput="st()" required></textarea>
+                  <div class="error-content"></div>
+                </div>
+              </div>
+              <div class="row sending">
+                <button class="button">
+                  <span class="submit" data-t="contact.form.submit">Envoyer</span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="row infos-area animate__animated animate__fadeIn">
@@ -441,7 +437,6 @@
         }, spd)
       }
     }
-    // Get the button:
     const displayScrollButton = () => document.getElementById("goTop").style.display = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? 'block' : 'none';
 
     const scrollToTop = () => {
@@ -485,6 +480,33 @@
     const si = document.querySelectorAll('.slider-img'), d = 3250
     let ic = 0
     si[ic].style.opacity = "1"
+
+
+    document.getElementById('form').addEventListener('submit', ev => {
+      ev.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = document.getElementById('subject').value;
+      const data = {
+        name,
+        email,
+        subject,
+        message
+      }
+      fetch("http://localhost:3000/message/new", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data)
+      })
+        .then(res => res.json())
+        .then(res => {
+          document.getElementById("thxarea").style.display = "block"
+          document.getElementById("formarea").style.display = "none"
+      })
+    });
   </script>
 </body>
 </html>

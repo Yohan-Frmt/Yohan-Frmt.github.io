@@ -521,6 +521,14 @@ h4 {
 textarea {
     height: 8rem !important; }
 
+.form-area h3 {
+    color: #434343;
+    width: 400%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700; }
+
 .contact-area {
     height: 214.5px; }
 .contact-area h3 {
