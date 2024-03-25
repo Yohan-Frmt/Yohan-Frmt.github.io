@@ -267,9 +267,9 @@
     <section>
       <div class="container">
         <div class="row form-area animate__animated animate__fadeIn">
-          <p id="thx-area" class="col m7 s12" style="display: none">
+          <div id="thx-area" class="col m7 s12" style="display: none">
             Merci pour votre message
-          </p>
+          </div>
           <div id="form-area" class="col m7 s12">
             <h3 data-t="contact.section.title">Formulaire de contact</h3>
             <form id="form" class="contact-form">
@@ -503,7 +503,7 @@
       })
         .then(res => res.json())
         .then(res => {
-          document.getElementById("thx-area").style.display = "block"
+          document.getElementById("thx-area").style.display = "flex"
           document.getElementById("form-area").style.display = "none"
       })
     });
