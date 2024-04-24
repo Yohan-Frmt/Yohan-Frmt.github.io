@@ -5,508 +5,522 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/style.css">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <button onclick="scrollToTop()" id="goTop" title="Go to top"><i class="fas fa-caret-up"></i><p>Top</p></button>
-  <nav id="navbar" role="navigation">
-    <div class="nav-wrapper container">
-      <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons menu">menu</i></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a data-t="nav.links.about" href="#about">À propos</a></li>
-        <li><a data-t="nav.links.skills" href="#skills">Compétences</a></li>
-      </ul>
-      <a href="#" id="brand" class="brand-logo center"><img class="logo" src="/img/logov3.png"
-                                                            alt="Logo"></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a data-t="nav.links.education" href="#skills">Formations</a></li>
-        <li><a data-t="nav.links.contact" href="#contact">Contact</a></li>
-      </ul>
-      <ul class="sidenav center" id="mobile">
-        <li><a data-t="nav.links.about" class="elem" href="#about">À propos</a></li>
-        <li><a data-t="nav.links.skills" class="elem" href="#skills">Compétences</a></li>
-        <li><a data-t="nav.links.education" class="elem" href="#skills">Formations</a></li>
-        <li><a data-t="nav.links.contact" class="elem" href="#contact">Contact</a></li>
+<button onclick="scrollToTop()" id="goTop" title="Go to top"><i class="fas fa-caret-up"></i>
+  <p>Top</p></button>
+<nav id="navbar" role="navigation">
+  <div class="nav-wrapper container">
+    <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons menu">menu</i></a>
+    <ul class="left hide-on-med-and-down">
+      <li><a data-t="nav.links.about" href="#about">À propos</a></li>
+      <li><a data-t="nav.links.skills" href="#skills">Compétences</a></li>
+    </ul>
+    <a href="#" id="brand" class="brand-logo center"><img class="logo" src="/img/logov3.png"
+                                                          alt="Logo"></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a data-t="nav.links.education" href="#skills">Formations</a></li>
+      <li><a data-t="nav.links.contact" href="#contact">Contact</a></li>
+    </ul>
+    <ul class="sidenav center" id="mobile">
+      <li><a data-t="nav.links.about" class="elem" href="#about">À propos</a></li>
+      <li><a data-t="nav.links.skills" class="elem" href="#skills">Compétences</a></li>
+      <li><a data-t="nav.links.education" class="elem" href="#skills">Formations</a></li>
+      <li><a data-t="nav.links.contact" class="elem" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="slider">
+  <div class="container">
+    <img class="slider-img" src="/img/b4.jpg" alt="">
+    <img class="slider-img" src="/img/b2.jpg" alt="">
+    <img class="slider-img" src="/img/b3.jpg" alt="">
+    <br><br>
+    <div class="row header">
+      <h2 class="name">frémont Yohan</h2>
+      <p class="whatdoido" data-t="header.whatdoido">Développeur Back-end</p><span id="language" class="whatdoido"
+                                                                                   data-wait="600"
+                                                                                   data-wds='[" PHP", " Node", " PHP, Node"]'></span>
+      <ul class="social">
+        <li>
+          <a class="animate__animated animate__fadeIn facebook" target="_blank"
+             href="https://www.facebook.com/yohan.fremont.79"><i class="fab fa-facebook-f"></i></a>
+          <a class="animate__animated animate__fadeIn github" target="_blank"
+             href="https://github.com/Yohan-Frmt"><i class="fab fa-github"></i></a>
+          <a class="animate__animated animate__fadeIn linkedin" target="_blank"
+             href="https://www.linkedin.com/in/yohan-frémont"><i class="fab fa-linkedin-in"></i></a>
+          <a class="animate__animated animate__fadeIn gmail" href="#contact"><i class="fab fa-google"></i></a>
+        </li>
       </ul>
     </div>
-  </nav>
-  <div class="slider">
-    <div class="container">
-      <img class="slider-img" src="/img/b4.jpg" alt="">
-      <img class="slider-img" src="/img/b2.jpg" alt="">
-      <img class="slider-img" src="/img/b3.jpg" alt="">
-      <br><br>
-      <div class="row header">
-        <h2 class="name">frémont Yohan</h2>
-        <p class="whatdoido" data-t="header.whatdoido">Développeur Back-end</p><span id="language" class="whatdoido"
-                                                                                     data-wait="600"
-                                                                                     data-wds='[" PHP", " Node", " PHP, Node"]'></span>
-        <ul class="social">
-          <li>
-            <a class="animate__animated animate__fadeIn facebook" target="_blank"
-               href="https://www.facebook.com/yohan.fremont.79"><i class="fab fa-facebook-f"></i></a>
-            <a class="animate__animated animate__fadeIn github" target="_blank"
-               href="https://github.com/Yohan-Frmt"><i class="fab fa-github"></i></a>
-            <a class="animate__animated animate__fadeIn linkedin" target="_blank"
-               href="https://www.linkedin.com/in/yohan-frémont"><i class="fab fa-linkedin-in"></i></a>
-            <a class="animate__animated animate__fadeIn gmail" href="#contact"><i class="fab fa-google"></i></a>
-          </li>
-        </ul>
+    <br><br>
+  </div>
+</div>
+<section id="about" class="about">
+  <h2 class="center about-title animate__animated animate__fadeIn" data-t="contact.header.title">Présentation</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col m6">
+        <h4 data-t="about.welcome">Bienvenu,</h4>
+        <p class="mylife" data-t="about.desc">Passionné par l'univers du web et de l'informatique en général,
+          j'ai donc intégré l'IUT de La Rochelle dans le département Informatique pour développer cette
+          passion. Je me suis plus tard spécialisé dans le développement back-end et la création de site
+          web.<br> Toujours a la recherche de nouvelles opportunités et de défis je suis disponible pour tous
+          vos projets.</p>
+        <div class="personal-infos">
+          <ul class="infos">
+            <li>
+              <span class="title" data-t="about.infos.name.title">Nom</span>
+              <span class="details">Yohan Frémont</span>
+            </li>
+            <li>
+              <span class="title" data-t="about.infos.age.title">Âge</span>
+              <span class="details"><span class="ga"></span> <span
+                data-t="about.infos.age.years">ans</span></span>
+            </li>
+            <li>
+              <span class="title" data-t="about.infos.exp.title">Expérience</span>
+              <span class="details">2+ <span data-t="about.infos.exp.years">années</span></span>
+            </li>
+            <li data-t="about.infos.country">
+              <span class="title" data-t="about.infos.country.title">Pays</span>
+              <span class="details">France</span>
+            </li>
+            <li data-t="about.infos.city">
+              <span class="title" data-t="about.infos.city.title">Ville</span>
+              <span class="details">La Couronne</span>
+            </li>
+            <li>
+              <span class="title" data-t="about.infos.mail.title">Email</span>
+              <span class="details"><a
+                href="mailto:fremontyohan@gmail.com">fremontyohan@gmail.com</a></span>
+            </li>
+            <li>
+              <span class="title" data-t="about.infos.availability.title">Disponibilité</span>
+              <span class="details" data-t="about.infos.availability.delay">Préavis 1 mois</span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <br><br>
+      <div class="col m6">
+        <img alt="qrcode" class="photo" src="/img/vcard.png" />
+      </div>
     </div>
   </div>
-  <section id="about" class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col m6">
-          <h4 data-t="about.welcome">Bienvenu,</h4>
-          <p class="mylife" data-t="about.desc">Passionné par l'univers du web et de l'informatique en général,
-            j'ai donc intégré l'IUT de La Rochelle dans le département Informatique pour développer cette
-            passion. Je me suis plus tard spécialisé dans le développement back-end et la création de site
-            web.<br> Toujours a la recherche de nouvelles opportunités et de défis je suis disponible pour tous
-            vos projets.</p>
-          <div class="personal-infos">
-            <ul class="infos">
-              <li>
-                <span class="title" data-t="about.infos.name.title">Nom</span>
-                <span class="details">Yohan Frémont</span>
-              </li>
-              <li>
-                <span class="title" data-t="about.infos.age.title">Âge</span>
-                <span class="details"><span class="ga"></span> <span
-                  data-t="about.infos.age.years">ans</span></span>
-              </li>
-              <li>
-                <span class="title" data-t="about.infos.exp.title">Expérience</span>
-                <span class="details">2+ <span data-t="about.infos.exp.years">années</span></span>
-              </li>
-              <li data-t="about.infos.country">
-                <span class="title" data-t="about.infos.country.title">Pays</span>
-                <span class="details">France</span>
-              </li>
-              <li data-t="about.infos.city">
-                <span class="title" data-t="about.infos.city.title">Ville</span>
-                <span class="details">La Couronne</span>
-              </li>
-              <li>
-                <span class="title" data-t="about.infos.mail.title">Email</span>
-                <span class="details"><a
-                  href="mailto:fremontyohan@gmail.com">fremontyohan@gmail.com</a></span>
-              </li>
-              <li>
-                <span class="title" data-t="about.infos.availability.title">Disponibilité</span>
-                <span class="details" data-t="about.infos.availability.delay">Préavis 1 mois</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col m6">
-          <img alt="qrcode" class="photo" src="/img/vcard.png"/>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="skills" class="skills">
-    <h2 class="center skills-title animate__animated animate__fadeIn" data-t="sf.header.title">Compétences et
-      Formations</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col m6 mobile-form">
-          <div class="row">
-            <div class="sf">
-              <ul class="line">
-                <li>
-                  <i class="fas fa-book-open"></i>
-                  <h2 class="lin-title" data-t="sf.programming.title">Langages</h2>
-                </li>
-                <li>
-                  <div class="progress blue lighten-4 tooltipped" data-position="top">
-                    <div data-t="sf.programming.html.title" class="determinate blue" style="width: 95%">
-                      <abbr title="HyperText Markup Language">HTML5</abbr> - <abbr
-                      title="Cascading Style Sheets">CSS3</abbr>
-                    </div>
-                  </div>
-                  <!--                  <span data-t="sf.programming.html.desc" class="sfdesc">J'apprécie la créativité et la précision qu'offre le CSS, même si ce n'est pas le langage que je maîtrise le mieux, trouver l'équilibre entre esthétique et fonctionnalité est un défi que j'aime relever </span>-->
-                </li>
-                <li>
-                  <div class="progress blue lighten-4 tooltipped">
-                    <div data-t="sf.programming.php.title" class="determinate blue" style="width: 75%"><abbr
-                      title="PHP: Hypertext Preprocessor">PHP</abbr> -
-                      Symfony
-                    </div>
-                  </div>
-                  <!--                  <span data-t="sf.programming.php.desc" class="sfdesc">J'ai eu l'occasion de réaliser un projet basé sur Symfony pendant 2 ans, un site qui réunissait plus de 10.000 joueurs en France.</span>-->
-                </li>
-                <li>
-                  <div class="progress blue lighten-4 tooltipped">
-                    <div data-t="sf.programming.js.title" class="determinate blue" style="width: 85%">
-                      NodeJS - ExpressJS
-                    </div>
-                  </div>
-                  <!--                  <span data-t="sf.programming.js.desc" class="sfdesc">J'apprécie la rapidité et la simplicité de développement qu'offre Node.js, ainsi que sa capacité à créer des applications évolutives en utilisant JavaScript côté serveur. La plupart de mes projets personnel tourne avec.</span>-->
-                </li>
-                <li>
-                  <div class="progress blue lighten-4 tooltipped">
-                    <div data-t="sf.programming.sql.title" class="determinate blue" style="width: 70%"><abbr
-                      title="My Structured Query Language">MySQL</abbr>
-                      - MongoDB
-                    </div>
-                  </div>
-                  <!--                  <span data-t="sf.programming.sql.desc" class="sfdesc">MySQL est un choix naturel pour la gestion de bases de données relationnelles mais j'apprécie aussi la flexibilité et la scalabilité offertes par MongoDB</span>-->
-                </li>
-                <li>
-                  <div class="progress blue lighten-4 tooltipped">
-                    <div data-t="sf.programming.angular.title" class="determinate blue" style="width: 45%">
-                      Angular
-                    </div>
-                  </div>
-                  <!--                  <span data-t="sf.programming.react.desc"-->
-                  <!--                        class="sfdesc">J'apprécie sa facilité d'utilisation et sa capacité à créer des interfaces utilisateur riches et réactives.</span>-->
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form">
-              <ul class="line">
-                <li>
-                  <i class="fas fa-graduation-cap"></i>
-                  <h2 class="lin-title" data-t="sf.education.title">Formations</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title" data-t="sf.education.auto.title">2012-2024 - Autodidaxie, Programmation
-                      Web</h3>
-                    <span></span>
-                    <p class="line-text" data-t="sf.education.auto.desc">Spécialisation développement
-                      web back Apprentissage Rails, Symfony, NodeJS, Angular et plus...</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title" data-t="sf.education.dut.title">2010-2012 - DUT Informatique à La
-                      Rochelle</h3>
-                    <span></span>
-                    <p class="line-text" data-t="sf.education.dut.desc">Formation à la conception, la
-                      réalisation et à la mise en œuvre de systèmes informatiques et de réseaux</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title" data-t="sf.education.bac.title">2008-2010 - Baccalauréat STI
-                      Électrotechnique à Angoulême</h3>
-                    <span></span>
-                    <p class="line-text" data-t="sf.education.bac.desc">Analyse et mise en service de
-                      systèmes pluritechnologiques où l'électricité est dominante</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col m6 mobile-form">
-          <div class="exp">
+</section>
+<section id="skills" class="skills">
+  <h2 class="center skills-title animate__animated animate__fadeIn" data-t="sf.header.title">Compétences et
+    Formations</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col m6 mobile-form">
+        <div class="row">
+          <div class="sf">
             <ul class="line">
               <li>
-                <i class="fas fa-briefcase"></i>
-                <h2 class="lin-title" data-t="exp.title">Expérience</h2>
+                <i class="fas fa-book-open"></i>
+                <h2 class="lin-title" data-t="sf.programming.title">Langages</h2>
               </li>
               <li>
-                <div class="content-text">
-                  <h3 class="line-title" data-t="exp.dev.title">DDM</h3>
-                  <span><a href="https://github.com/Yohan-Frmt/TBR">https://github.com/Yohan-Frmt/TBR</a></span>
-                  <p class="line-text" data-t="exp.dev.desc">Application qui reprend les règles du jeu de société Dungeon Dice Monsters, développé avec une architecture <abbr title="Entity Component System">ECS</abbr></p>
+                <div class="progress blue lighten-4 tooltipped" data-position="top">
+                  <div data-t="sf.programming.html.title" class="determinate blue" style="width: 95%">
+                    <abbr title="HyperText Markup Language">HTML5</abbr> - <abbr
+                    title="Cascading Style Sheets">CSS3</abbr>
+                  </div>
                 </div>
               </li>
               <li>
-                <div class="content-text">
-                  <h3 class="line-title" data-t="exp.dev.title">TBR</h3>
-                  <span><a href="https://github.com/Yohan-Frmt/TBR">https://github.com/Yohan-Frmt/TBR</a></span>
-                  <p class="line-text" data-t="exp.dev.desc">Application qui reprend les règles du jeu de société Time Bomb, développement d'un serveur "clusterisé" + interface React </p>
+                <div class="progress blue lighten-4 tooltipped">
+                  <div data-t="sf.programming.php.title" class="determinate blue" style="width: 75%"><abbr
+                    title="PHP: Hypertext Preprocessor">PHP</abbr> -
+                    Symfony
+                  </div>
                 </div>
               </li>
               <li>
-                <div class="content-text">
-                  <h3 class="line-title" data-t="exp.dev.title">OPTCG</h3>
-                  <span><a href="https://github.com/Yohan-Frmt/OPTCG">https://github.com/Yohan-Frmt/OPTCG</a></span>
-                  <p class="line-text" data-t="exp.dev.desc">Application dédié au jeu de cartes à collectionner One Piece, utilisation de NestJs + Angular avec une base de donnée PostgreSQL.</p>
+                <div class="progress blue lighten-4 tooltipped">
+                  <div data-t="sf.programming.js.title" class="determinate blue" style="width: 85%">
+                    NodeJS - ExpressJS
+                  </div>
                 </div>
               </li>
               <li>
+                <div class="progress blue lighten-4 tooltipped">
+                  <div data-t="sf.programming.sql.title" class="determinate blue" style="width: 70%"><abbr
+                    title="My Structured Query Language">MySQL</abbr>
+                    - MongoDB
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="progress blue lighten-4 tooltipped">
+                  <div data-t="sf.programming.angular.title" class="determinate blue" style="width: 50%">
+                    Angular
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form">
+            <ul class="line">
+              <li>
+                <i class="fas fa-graduation-cap"></i>
+                <h2 class="lin-title" data-t="sf.education.title">Formations</h2>
+              </li>
+              <li>
                 <div class="content-text">
-                  <h3 class="line-title" data-t="exp.dev.title">2018-2020 - Développeur Web Fullstack</h3>
+                  <h3 class="line-title" data-t="sf.education.auto.title">2012-2024 - Autodidaxie, Programmation
+                    Web</h3>
                   <span></span>
-                  <p class="line-text" data-t="exp.dev.desc">Création d'un site web sous Symfony + Twig, création d'une application en JS et d'une API pour des
-                    applications externes</p>
+                  <p class="line-text" data-t="sf.education.auto.desc">Spécialisation Fullstack<br>Apprentissage Rails,
+                    Symfony, NodeJS, Angular ...</p>
                 </div>
               </li>
               <li>
                 <div class="content-text">
-                  <h3 class="line-title" data-t="exp.els.title">2017-2024 - Employé Libre Service</h3>
+                  <h3 class="line-title" data-t="sf.education.dut.title">2010-2012 - DUT Informatique à La
+                    Rochelle</h3>
                   <span></span>
-                  <p class="line-text" data-t="exp.els.desc">Gestion des commandes, mise en rayon,
-                    gestion des stocks et anomalies</p>
+                  <p class="line-text" data-t="sf.education.dut.desc">Formation à la conception, la
+                    réalisation et à la mise en œuvre de systèmes informatiques et de réseaux</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title" data-t="sf.education.bac.title">2008-2010 - Baccalauréat STI
+                    Électrotechnique à Angoulême</h3>
+                  <span></span>
+                  <p class="line-text" data-t="sf.education.bac.desc">Analyse et mise en service de
+                    systèmes pluritechnologiques où l'électricité est dominante</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
+
+      <div class="col m6 mobile-form">
+        <div class="exp">
+          <ul class="line">
+            <li>
+              <i class="fas fa-briefcase"></i>
+              <h2 class="lin-title" data-t="exp.title">Expérience</h2>
+            </li>
+            <li>
+              <div class="content-text">
+                <h3 class="line-title" data-t="exp.dev.title">2024 - Développeur Frontend - Freelance</h3>
+                <span><a href="https://ecommerceconnect.fr/">https://ecommerceconnect.fr/</a></span>
+                <p class="line-text" data-t="exp.dev.desc">Integration et Maintenance de "Ecommerce Connect & Retail" en
+                  Angular pour l'entreprise <a
+                    href="https://www.linkedin.com/company/wonke/"><u>Wonke</u></a></p>
+                <span class="tech">Angular - SASS - Typescript</span>
+              </div>
+            </li>
+            <li>
+              <div class="content-text">
+                <h3 class="line-title" data-t="exp.dev.title">2018-2020 - Développeur Fullstack - Freelance</h3>
+                <span></span>
+                <p class="line-text" data-t="exp.dev.desc">Création d'un site web sous Symfony + Twig, création d'une
+                  application en JS et d'une API pour des
+                  applications externes</p>
+                <span class="tech">Symfony - SASS - Twig - Vanilla JS - Swagger - Docker</span>
+              </div>
+            </li>
+            <li>
+              <div class="content-text">
+                <h3 class="line-title" data-t="exp.dev.title">DDM - Projet personnel</h3>
+                <span><a href="https://github.com/Yohan-Frmt/ddmecs">https://github.com/Yohan-Frmt/ddmecs</a></span>
+                <p class="line-text" data-t="exp.dev.desc">Application qui reprend les règles du jeu de société Dungeon
+                  Dice Monsters, développé avec une architecture <abbr title="Entity Component System">ECS</abbr></p>
+                <span class="tech">Vite - SASS - Typescript - ECS</span>
+              </div>
+            </li>
+            <li>
+              <div class="content-text">
+                <h3 class="line-title" data-t="exp.dev.title">TBR - Projet personnel</h3>
+                <span><a href="https://github.com/Yohan-Frmt/TBR">https://github.com/Yohan-Frmt/TBR</a></span>
+                <p class="line-text" data-t="exp.dev.desc">Application qui reprend les règles du jeu de société Time
+                  Bomb, développement d'un serveur "clusterisé" + interface React </p>
+                <span class="tech">ExpressJS - MongoDB - Cluster - Typescript - React - Websocket</span>
+              </div>
+            </li>
+            <li>
+              <div class="content-text">
+                <h3 class="line-title" data-t="exp.dev.title">OPTCG - Projet personnel</h3>
+                <span><a href="https://github.com/Yohan-Frmt/OPTCG">https://github.com/Yohan-Frmt/OPTCG</a></span>
+                <p class="line-text" data-t="exp.dev.desc">Application dédié au jeu de cartes à collectionner One Piece,
+                  utilisation de NestJs + Angular avec une base de donnée PostgreSQL.</p>
+                <span class="tech">NestJS - Angular - SASS - Typescript - Docker</span>
+              </div>
+            </li>
+            <li>
+              <div class="content-text">
+                <h3 class="line-title" data-t="exp.els.title">2017-2024 - Employé Libre Service</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </section>
-  <div id="contact">
-    <section>
-      <div class="container">
-        <div class="row form-area animate__animated animate__fadeIn">
-          <div id="thx-area" class="col m7 s12" style="display: none">
-            Merci pour votre message
-          </div>
-          <div id="form-area" class="col m7 s12">
-            <h3 data-t="contact.section.title">Formulaire de contact</h3>
-            <form id="form" class="contact-form">
-              <div class="row">
-                <div class="col m5 input-field">
-                  <label for="name" data-t="contact.form.name">Nom</label>
-                  <input id="name" type="text" class="form-input" name="name" data-error="Ce champ est obligatoire"
-                         required>
-                  <div class="error-content"></div>
-                </div>
-                <div class="col m5 input-field">
-                  <label for="email">Email</label>
-                  <input id="email" type="email" class="form-input validate" name="email"
-                         pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"
-                         required>
-                  <span class="helper-text" data-error="Email non valide"></span>
-                </div>
-                <div class="col m10 input-field">
-                  <label for="subject" data-t="contact.form.subject">Objet</label>
-                  <input id="subject" type="text" class="form-input has-character-counter" data-length="30"
-                         name="subject" data-error="Ce champ est obligatoire" required>
-                  <div class="error-content"></div>
-                </div>
-                <div class="col m10 input-field">
-                  <label for="message">Message</label>
-                  <textarea class="materialize-textarea form-input has-character-counter"
-                            data-length="200" id="message" name="message" rows="5" data-error="Message"
-                            oninput="st()" required></textarea>
-                  <div class="error-content"></div>
-                </div>
-              </div>
-              <div class="row sending">
-                <button class="button">
-                  <span class="submit" data-t="contact.form.submit">Envoyer</span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="row infos-area animate__animated animate__fadeIn">
-          <div class="contact-area">
-            <h3 data-t="contact.personal.title">Informations personnelles</h3>
-            <div class="contact-content">
-              <div class="single">
-                <i class="icon fas fa-user"></i>
-                <p>Appt 7, 121 Route de Breuty</p>
-                <p>16400 Ma Couronne</p>
-              </div>
-              <div class="single">
-                <i class="icon fab fa-google"></i>
-                <p><a href="mailto:fremontyohan@gmail.com">fremontyohan@gmail.com</a></p>
-              </div>
-              <div class="single">
-                <i class="icon fab fa-github"></i>
-                <p><a href="https://github.com/Yohan-Frmt">https://github.com/Yohan-Frmt</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="contact-area hobbies-area">
-            <h3 data-t="contact.hobbies.title">Centres d'intérêt</h3>
-            <div class="row mobile-hobbies">
-              <div class="hobbies">
-                <img src="/img/chef.svg" alt="">
-              </div>
-              <div class="hobbies">
-                <img src="/img/multimedia.svg" alt="">
-              </div>
-              <div class="hobbies">
-                <img src="/img/code.svg" alt="">
-              </div>
-              <div class="hobbies">
-                <img src="/img/book.svg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col l7 m7 s12">
-              <h3>TL;DR :</h3>
-              <p data-t="footer.tldr.one">Passionné par l'univers du web et de l'informatique en général, j'ai donc intégré l'IUT de La
-                Rochelle dans le département Informatique pour développer cette passion. Je me suis plus
-                tard spécialisé dans le développement back-end et la création de site web.</p>
-              <p data-t="footer.tldr.two">Toujours a la recherche de nouvelles opportunités et de défis je suis disponible pour tous
-                vos projets.</p>
-            </div>
-            <div class="col s2"></div>
-            <div class="col l3 m3 s12">
-              <div class="footer-tldr">
-                <h3>Frémont Yohan</h3>
-                <address>
-                  <p><i class="fab fa-github"></i><a href="https://github.com/Yohan-Frmt">Yohan-Frmt</a>
-                  <p><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/yohan-frémont/">yohan-frémont</a>
-                  <p><i class="fab fa-google"></i><a href="mailto:fremontyohan@gmail.com">fremontyohan@gmail.com</a>
-                  </p>
-                </address>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <div class="footer-social">
-                <div class="footer-logo">
-                  <a href="#"><img height="70" src="/img/logov3.png" alt=""></a>
-                </div>
-                <ul class="footer-social-link">
-                  <li>
-                    <a class="animate__animated animate__fadeIn facebook" target="_blank"
-                       href="https://www.facebook.com/yohan.fremont.79"><i
-                      class="fab fa-facebook-f"></i></a>
-                    <a class="animate__animated animate__fadeIn github" target="_blank"
-                       href="https://github.com/Yohan-Frmt"><i class="fab fa-github"></i></a>
-                    <a class="animate__animated animate__fadeIn linkedin" target="_blank"
-                       href="https://www.linkedin.com/in/yohan-frémont-2674601a0/"><i
-                      class="fab fa-linkedin-in"></i></a>
-                    <a class="animate__animated animate__fadeIn gmail" href="#contact"><i
-                      class="fab fa-google"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script defer>
-    class T {
-      constructor(textEl, words, wait = "4000") {
-        this.txtEl = textEl
-        this.wds = words
-        this.w8 = wait
-        this.txt = ''
-        this.wi = 0
-        this.d = false;
-        this.t()
-      }
-
-      t = () => {
-        let spd = this.wi === this.wds.length - 1 ? 75 : 300
-        this.txt = this.d ? this.wds[this.wi % this.wds.length].substring(0, this.txt.length - 1) : this.wds[this.wi % this.wds.length].substring(0, this.txt.length + 1)
-        this.txtEl.innerHTML = `<span class="text">${this.txt}</span>`
-        spd = !this.d ? spd : 75
-        if (!this.d && this.txt === this.wds[this.wi % this.wds.length]) {
-          if (this.wi === this.wds.length - 2) spd = 75
-          if (this.wds.length === this.wi + 1) return
-          this.d = true
-          spd = this.w8
-        } else if (this.d && this.txt === '') {
-          this.d = false
-          this.wi++
-          spd = "300"
-        }
-        setTimeout(() => {
-          this.t()
-        }, spd)
-      }
+</section>
+<section id="contact" class="contact">
+  <h2 class="center contact-title animate__animated animate__fadeIn" data-t="contact.header.title">Contact</h2>
+  <div class="container">
+    <div class="form-area container-area animate__animated animate__fadeIn">
+      <div id="thx-area" class="col m7 s12" style="display: none">
+        Merci pour votre message
+      </div>
+      <div id="form-area" class="col m7 s12">
+        <h3 data-t="contact.section.title">Formulaire de contact</h3>
+        <form id="form" class="contact-form">
+          <div class="row">
+            <div class="col m5 input-field">
+              <label for="name" data-t="contact.form.name">Nom</label>
+              <input id="name" type="text" class="form-input" name="name" data-error="Ce champ est obligatoire"
+                     required>
+              <div class="error-content"></div>
+            </div>
+            <div class="col m5 input-field">
+              <label for="email">Email</label>
+              <input id="email" type="email" class="form-input validate" name="email"
+                     pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"
+                     required>
+              <span class="helper-text" data-error="Email non valide"></span>
+            </div>
+            <div class="col m10 input-field">
+              <label for="subject" data-t="contact.form.subject">Objet</label>
+              <input id="subject" type="text" class="form-input has-character-counter" data-length="30"
+                     name="subject" data-error="Ce champ est obligatoire" required>
+              <div class="error-content"></div>
+            </div>
+            <div class="col m10 input-field">
+              <label for="message">Message</label>
+              <textarea class="materialize-textarea form-input has-character-counter"
+                        data-length="200" id="message" name="message" rows="5" data-error="Message"
+                        oninput="st()" required></textarea>
+              <div class="error-content"></div>
+            </div>
+          </div>
+          <div class="row sending">
+            <button class="button">
+              <span class="submit" data-t="contact.form.submit">Envoyer</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="infos-area container-area animate__animated animate__fadeIn">
+      <div class="contact-area">
+        <h3 data-t="contact.personal.title">Informations personnelles</h3>
+        <div class="contact-content">
+          <div class="single">
+            <i class="icon fas fa-user"></i>
+            <p>Appt 7, 121 Route de Breuty</p>
+            <p>16400 La Couronne</p>
+          </div>
+          <div class="single">
+            <i class="icon fab fa-google"></i>
+            <p><a href="mailto:fremontyohan@gmail.com">fremontyohan@gmail.com</a></p>
+          </div>
+          <div class="single">
+            <i class="icon fab fa-github"></i>
+            <p><a href="https://github.com/Yohan-Frmt">https://github.com/Yohan-Frmt</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-area hobbies-area">
+        <h3 data-t="contact.hobbies.title">Centres d'intérêt</h3>
+        <div class="row mobile-hobbies">
+          <div class="hobbies">
+            <img src="/img/chef.svg" alt="">
+          </div>
+          <div class="hobbies">
+            <img src="/img/multimedia.svg" alt="">
+          </div>
+          <div class="hobbies">
+            <img src="/img/code.svg" alt="">
+          </div>
+          <div class="hobbies">
+            <img src="/img/book.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col l7 m7 s12">
+          <h3>TL;DR :</h3>
+          <p data-t="footer.tldr.one">Passionné par l'univers du web et de l'informatique en général, j'ai donc intégré
+            l'IUT de La
+            Rochelle dans le département Informatique pour développer cette passion. Je me suis plus
+            tard spécialisé dans le développement back-end et la création de site web.</p>
+          <p data-t="footer.tldr.two">Toujours a la recherche de nouvelles opportunités et de défis je suis disponible
+            pour tous
+            vos projets.</p>
+        </div>
+        <div class="col s2"></div>
+        <div class="col l3 m3 s12">
+          <div class="footer-tldr">
+            <h3>Frémont Yohan</h3>
+            <address>
+              <p><i class="fab fa-github"></i><a href="https://github.com/Yohan-Frmt">Yohan-Frmt</a>
+              <p><i class="fab fa-linkedin-in"></i><a
+                href="https://www.linkedin.com/in/yohan-frémont/">yohan-frémont</a>
+              <p><i class="fab fa-google"></i><a href="mailto:fremontyohan@gmail.com">fremontyohan@gmail.com</a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="footer-social">
+            <div class="footer-logo">
+              <a href="#"><img height="70" src="/img/logov3.png" alt=""></a>
+            </div>
+            <ul class="footer-social-link">
+              <li>
+                <a class="animate__animated animate__fadeIn facebook" target="_blank"
+                   href="https://www.facebook.com/yohan.fremont.79"><i
+                  class="fab fa-facebook-f"></i></a>
+                <a class="animate__animated animate__fadeIn github" target="_blank"
+                   href="https://github.com/Yohan-Frmt"><i class="fab fa-github"></i></a>
+                <a class="animate__animated animate__fadeIn linkedin" target="_blank"
+                   href="https://www.linkedin.com/in/yohan-frémont-2674601a0/"><i
+                  class="fab fa-linkedin-in"></i></a>
+                <a class="animate__animated animate__fadeIn gmail" href="#contact"><i
+                  class="fab fa-google"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script defer>
+  class T {
+    constructor(textEl, words, wait = '4000') {
+      this.txtEl = textEl;
+      this.wds = words;
+      this.w8 = wait;
+      this.txt = '';
+      this.wi = 0;
+      this.d = false;
+      this.t();
     }
-    const displayScrollButton = () => document.getElementById("goTop").style.display = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? 'block' : 'none';
 
-    const scrollToTop = () => {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
+    t = () => {
+      let spd = this.wi === this.wds.length - 1 ? 75 : 300;
+      this.txt = this.d ? this.wds[this.wi % this.wds.length].substring(0, this.txt.length - 1) : this.wds[this.wi % this.wds.length].substring(0, this.txt.length + 1);
+      this.txtEl.innerHTML = `<span class="text">${this.txt}</span>`;
+      spd = !this.d ? spd : 75;
+      if (!this.d && this.txt === this.wds[this.wi % this.wds.length]) {
+        if (this.wi === this.wds.length - 2) spd = 75;
+        if (this.wds.length === this.wi + 1) return;
+        this.d = true;
+        spd = this.w8;
+      } else if (this.d && this.txt === '') {
+        this.d = false;
+        this.wi++;
+        spd = '300';
+      }
+      setTimeout(() => {
+        this.t();
+      }, spd);
     };
+  }
 
-    window.onscroll = () => displayScrollButton();
+  const displayScrollButton = () => document.getElementById('goTop').style.display = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? 'block' : 'none';
 
-      ga = e => {
-        let a = new Date().getFullYear() - new Date(e).getFullYear()
-        return ((new Date().getMonth() - new Date(e).getMonth()) < 0 || 0 === (new Date().getMonth() - new Date(e).getMonth()) && new Date().getDate() < new Date(e).getDate()) && a--, a
-      }
-      gy = _ => new Date().getFullYear()
-      ni = () => {
-        si[ic].style.zIndex = '-2'
-        const nc = ic
-        setTimeout(() => {
-          si[nc].style.opacity = '0'
-        }, 1000)
-        ic = (ic + 1) % si.length
-        si[ic].style.opacity = '1'
-        si[ic].style.zIndex = '-1'
-      }
-      st = () => document.getElementById("message").style.overflowY = document.getElementById("message").value.split(/\r|\r\n|\n/).length >= document.getElementById("message").getAttribute('rows') ? "scroll" : (document.getElementById("message").value.split(/\r|\r\n|\n/).length < document.getElementById("message").getAttribute('rows') ? "hidden" : '')
+  const scrollToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
 
-    document.addEventListener('DOMContentLoaded', () => {
-      M.Sidenav.init(document.querySelectorAll('.sidenav'))
-      M.CharacterCounter.init(document.querySelectorAll('.has-character-counter'))
-      document.querySelectorAll('.ga').forEach(s => {
-        s.innerHTML = ga('1992/04/13')
-      })
-      // document.getElementsByClassName('years')[0].innerText = gy('2012')
-      // document.getElementsByClassName('years')[1].innerText = gy('2017')
-      const txtEl = document.getElementById('language'),
-        wds = JSON.parse(txtEl.getAttribute('data-wds')),
-        w8 = txtEl.getAttribute('data-wait')
-      new T(txtEl, wds, w8)
-      setInterval(ni, d)
-    })
-    const si = document.querySelectorAll('.slider-img'), d = 3250
-    let ic = 0
-    si[ic].style.opacity = "1"
+  window.onscroll = () => displayScrollButton();
 
+  ga = e => {
+    let a = new Date().getFullYear() - new Date(e).getFullYear();
+    return ((new Date().getMonth() - new Date(e).getMonth()) < 0 || 0 === (new Date().getMonth() - new Date(e).getMonth()) && new Date().getDate() < new Date(e).getDate()) && a--, a;
+  };
+  gy = _ => new Date().getFullYear();
+  ni = () => {
+    si[ic].style.zIndex = '-2';
+    const nc = ic;
+    setTimeout(() => {
+      si[nc].style.opacity = '0';
+    }, 1000);
+    ic = (ic + 1) % si.length;
+    si[ic].style.opacity = '1';
+    si[ic].style.zIndex = '-1';
+  };
+  st = () => document.getElementById('message').style.overflowY = document.getElementById('message').value.split(/\r|\r\n|\n/).length >= document.getElementById('message').getAttribute('rows') ? 'scroll' : (document.getElementById('message').value.split(/\r|\r\n|\n/).length < document.getElementById('message').getAttribute('rows') ? 'hidden' : '');
 
-    document.getElementById('form').addEventListener('submit', ev => {
-      ev.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      const subject = document.getElementById('subject').value;
-      const data = {
-        name,
-        email,
-        subject,
-        message
-      }
-      fetch("https://cv-yohan-frmt-5468ca2d2ffd.herokuapp.com/message/new", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data)
-      })
-        .then(res => res.json())
-        .then(res => {
-          document.getElementById("thx-area").style.display = "flex"
-          document.getElementById("form-area").style.display = "none"
-      })
+  document.addEventListener('DOMContentLoaded', () => {
+    M.Sidenav.init(document.querySelectorAll('.sidenav'));
+    M.CharacterCounter.init(document.querySelectorAll('.has-character-counter'));
+    document.querySelectorAll('.ga').forEach(s => {
+      s.innerHTML = ga('1992/04/13');
     });
-  </script>
+    // document.getElementsByClassName('years')[0].innerText = gy('2012')
+    // document.getElementsByClassName('years')[1].innerText = gy('2017')
+    const txtEl = document.getElementById('language'),
+      wds = JSON.parse(txtEl.getAttribute('data-wds')),
+      w8 = txtEl.getAttribute('data-wait');
+    new T(txtEl, wds, w8);
+    setInterval(ni, d);
+  });
+  const si = document.querySelectorAll('.slider-img'), d = 3250;
+  let ic = 0;
+  si[ic].style.opacity = '1';
+
+
+  document.getElementById('form').addEventListener('submit', ev => {
+    ev.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const subject = document.getElementById('subject').value;
+    const data = {
+      name,
+      email,
+      subject,
+      message
+    };
+    fetch('https://cv-yohan-frmt-5468ca2d2ffd.herokuapp.com/message/new', {
+      method: 'post',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(res => res.json())
+      .then(res => {
+        document.getElementById('thx-area').style.display = 'flex';
+        document.getElementById('form-area').style.display = 'none';
+      });
+  });
+</script>
 </body>
 </html>
