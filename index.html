@@ -45,14 +45,12 @@
     <img class="slider-img" src="/img/b3.jpg" alt="">
     <br><br>
     <div class="row header">
-      <h2 class="name">frémont Yohan</h2>
-      <p class="whatdoido" data-t="header.whatdoido">Développeur Back-end</p><span id="language" class="whatdoido"
+      <h2 class="name">Frémont Yohan</h2>
+      <p class="whatdoido" data-t="header.whatdoido">Développeur Fullstack</p><span id="language" class="whatdoido"
                                                                                    data-wait="600"
-                                                                                   data-wds='[" PHP", " Node", " PHP, Node"]'></span>
+                                                                                   data-wds='[" PHP", " Node", "Angular", "PHP, Node, Angular"]'></span>
       <ul class="social">
         <li>
-          <a class="animate__animated animate__fadeIn facebook" target="_blank"
-             href="https://www.facebook.com/yohan.fremont.79"><i class="fab fa-facebook-f"></i></a>
           <a class="animate__animated animate__fadeIn github" target="_blank"
              href="https://github.com/Yohan-Frmt"><i class="fab fa-github"></i></a>
           <a class="animate__animated animate__fadeIn linkedin" target="_blank"
@@ -69,7 +67,7 @@
   <div class="container">
     <div class="row">
       <div class="col m6">
-        <h4 data-t="about.welcome">Bienvenu,</h4>
+        <h4 data-t="about.welcome">Bienvenue,</h4>
         <p class="mylife" data-t="about.desc">Passionné par l'univers du web et de l'informatique en général,
           j'ai donc intégré l'IUT de La Rochelle dans le département Informatique pour développer cette
           passion. Je me suis plus tard spécialisé dans le développement back-end et la création de site
@@ -88,7 +86,7 @@
             </li>
             <li>
               <span class="title" data-t="about.infos.exp.title">Expérience</span>
-              <span class="details">2+ <span data-t="about.infos.exp.years">années</span></span>
+              <span class="details">3+ <span data-t="about.infos.exp.years">années</span></span>
             </li>
             <li data-t="about.infos.country">
               <span class="title" data-t="about.infos.country.title">Pays</span>
@@ -105,7 +103,7 @@
             </li>
             <li>
               <span class="title" data-t="about.infos.availability.title">Disponibilité</span>
-              <span class="details" data-t="about.infos.availability.delay">Préavis 1 mois</span>
+              <span class="details" data-t="about.infos.availability.delay">Préavis 1 mois (négociable)</span>
             </li>
           </ul>
         </div>
@@ -131,7 +129,7 @@
               </li>
               <li>
                 <div class="progress blue lighten-4 tooltipped" data-position="top">
-                  <div data-t="sf.programming.html.title" class="determinate blue" style="width: 95%">
+                  <div data-t="sf.programming.html.title" class="determinate blue" style="width: 98%">
                     <abbr title="HyperText Markup Language">HTML5</abbr> - <abbr
                     title="Cascading Style Sheets">CSS3</abbr>
                   </div>
@@ -147,14 +145,14 @@
               </li>
               <li>
                 <div class="progress blue lighten-4 tooltipped">
-                  <div data-t="sf.programming.js.title" class="determinate blue" style="width: 85%">
-                    NodeJS - ExpressJS
+                  <div data-t="sf.programming.js.title" class="determinate blue" style="width: 80%">
+                    NodeJS - ExpressJS - NestJs
                   </div>
                 </div>
               </li>
               <li>
                 <div class="progress blue lighten-4 tooltipped">
-                  <div data-t="sf.programming.sql.title" class="determinate blue" style="width: 70%"><abbr
+                  <div data-t="sf.programming.sql.title" class="determinate blue" style="width: 85%"><abbr
                     title="My Structured Query Language">MySQL</abbr>
                     - MongoDB
                   </div>
@@ -162,7 +160,7 @@
               </li>
               <li>
                 <div class="progress blue lighten-4 tooltipped">
-                  <div data-t="sf.programming.angular.title" class="determinate blue" style="width: 50%">
+                  <div data-t="sf.programming.angular.title" class="determinate blue" style="width: 70%">
                     Angular
                   </div>
                 </div>
@@ -215,6 +213,16 @@
             <li>
               <i class="fas fa-briefcase"></i>
               <h2 class="lin-title" data-t="exp.title">Expérience</h2>
+            </li>
+            <li>
+              <div class="content-text">
+                <h3 class="line-title" data-t="exp.dev.title">2025 - Développeur Frontend - Freelance</h3>
+                <span><a href="https://ecommerceconnect.fr/">https://commercedurable.com/</a></span>
+                <p class="line-text" data-t="exp.dev.desc">Integration et Maintenance de "Commerce Durable" en
+                  Angular pour l'entreprise <a
+                    href="https://www.linkedin.com/company/wonke/"><u>Wonke</u></a></p>
+                <span class="tech">Angular - SASS - Typescript</span>
+              </div>
             </li>
             <li>
               <div class="content-text">
@@ -288,32 +296,32 @@
             <div class="col m5 input-field">
               <label for="name" data-t="contact.form.name">Nom</label>
               <input id="name" type="text" class="form-input" name="name" data-error="Ce champ est obligatoire"
-                     required>
+                     disabled>
               <div class="error-content"></div>
             </div>
             <div class="col m5 input-field">
               <label for="email">Email</label>
               <input id="email" type="email" class="form-input validate" name="email"
                      pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$"
-                     required>
+                     disabled>
               <span class="helper-text" data-error="Email non valide"></span>
             </div>
             <div class="col m10 input-field">
               <label for="subject" data-t="contact.form.subject">Objet</label>
               <input id="subject" type="text" class="form-input has-character-counter" data-length="30"
-                     name="subject" data-error="Ce champ est obligatoire" required>
+                     name="subject" data-error="Ce champ est obligatoire" disabled>
               <div class="error-content"></div>
             </div>
             <div class="col m10 input-field">
               <label for="message">Message</label>
               <textarea class="materialize-textarea form-input has-character-counter"
                         data-length="200" id="message" name="message" rows="5" data-error="Message"
-                        oninput="st()" required></textarea>
+                        oninput="st()" disabled></textarea>
               <div class="error-content"></div>
             </div>
           </div>
           <div class="row sending">
-            <button class="button">
+            <button class="button" disabled>
               <span class="submit" data-t="contact.form.submit">Envoyer</span>
             </button>
           </div>
@@ -326,8 +334,7 @@
         <div class="contact-content">
           <div class="single">
             <i class="icon fas fa-user"></i>
-            <p>Appt 7, 121 Route de Breuty</p>
-            <p>16400 La Couronne</p>
+            <p>Appt 7, 121 Route de Breuty, 16400 La Couronne</p>
           </div>
           <div class="single">
             <i class="icon fab fa-google"></i>
@@ -399,9 +406,6 @@
             </div>
             <ul class="footer-social-link">
               <li>
-                <a class="animate__animated animate__fadeIn facebook" target="_blank"
-                   href="https://www.facebook.com/yohan.fremont.79"><i
-                  class="fab fa-facebook-f"></i></a>
                 <a class="animate__animated animate__fadeIn github" target="_blank"
                    href="https://github.com/Yohan-Frmt"><i class="fab fa-github"></i></a>
                 <a class="animate__animated animate__fadeIn linkedin" target="_blank"
@@ -516,7 +520,7 @@
       body: JSON.stringify(data)
     })
       .then(res => res.json())
-      .then(res => {
+      .then(_ => {
         document.getElementById('thx-area').style.display = 'flex';
         document.getElementById('form-area').style.display = 'none';
       });
